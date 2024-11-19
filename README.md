@@ -1,1 +1,1 @@
-# python-mysql-bootcamp
+# Python and MySQL connection bootcamp
