@@ -1,9 +1,6 @@
 # Python and MySQL Connection Bootcamp
 
-################################################################################
-
 #### Programas para a Oficina
-
 
 # Criação da Tabela  MYSQL
 
@@ -129,8 +126,7 @@ if __name__ == "__main__":
 
     main()
     session.close()
-
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    
 
 ### versão atualizada para UPDATE e DELETE por ID
 
@@ -294,11 +290,6 @@ if __name__ == "__main__":
 
 
 
-
-
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-############################################################################
-
 # PythonProjectOficina2
 
 # criar somente o Banco de Dados - NÃO PRECISA CRIAR A TABELA 
@@ -306,8 +297,6 @@ if __name__ == "__main__":
 CREATE DATABASE  pet_adoption;
 
 
-
-########################################
 #main.py
 import tkinter as tk
 from model import create_tables
@@ -323,7 +312,8 @@ def main():
 
 if __name__ == "__main__":
     main()
-#######################################
+
+
 # model.py
 from sqlalchemy import create_engine, Column, Integer, String, Boolean
 from sqlalchemy.ext.declarative import declarative_base
@@ -407,10 +397,7 @@ class PetView:
         except tk.TclError:
             return None  # Nenhum texto selecionado
 
-####################################################
 
-
-######################################################################################################
 # controller.py
 from model import create_tables, Session, Pet
 
